@@ -1,4 +1,3 @@
-use itertools::Itertools;
 use nom::bytes::complete::tag;
 use nom::combinator::{map, map_res};
 use nom::sequence::{delimited, separated_pair};
