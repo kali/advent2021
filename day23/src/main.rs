@@ -150,10 +150,12 @@ fn unfold(input: &str) -> String {
 fn run(input: &str) -> usize {
     let state = input.parse::<State>().unwrap();
     let res = astar::astar(&state, State::next, State::heuristic, State::success).unwrap();
+    /*
     for s in res.0 {
         s.dump();
         println!("");
     }
+    */
     res.1
 }
 
